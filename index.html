@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+    <meta name="referrer" content="never" />
+    <title>软件搜搜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+
+        <h2>
+            <a href="https://github.com/ashuang360/rjss" target="_blank">
+                <span>软件搜搜</span>
+                <svg t="1668845472311" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" p-id="2657" width="24" height="24">
+                    <path
+                        d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9 23.5 23.2 38.1 55.4 38.1 91v112.5c0.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"
+                        p-id="2658" fill="#42505c"></path>
+                </svg>
+            </a>
+        </h2>
+
+        <div id="sousuo">
+            <input id="ssInput" type="text" placeholder="输入并搜索" onkeydown="onkeydownEnter()">
+            <div id="ssBtn" onclick="ssGo()">
+                <?xml version="1.0" encoding="UTF-8"?><svg width="20" height="20" viewBox="0 0 48 48" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M21 38C30.3888 38 38 30.3888 38 21C38 11.6112 30.3888 4 21 4C11.6112 4 4 11.6112 4 21C4 30.3888 11.6112 38 21 38Z"
+                        fill="none" stroke="#06a17e" stroke-width="4" stroke-linejoin="round" />
+                    <path
+                        d="M26.657 14.3431C25.2093 12.8954 23.2093 12 21.0001 12C18.791 12 16.791 12.8954 15.3433 14.3431"
+                        stroke="#06a17e" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M33.2216 33.2217L41.7069 41.707" stroke="#06a17e" stroke-width="4" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <div class="deleteAll">
+        <svg width="20" height="20" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 10V44H39V10H9Z" fill="none" stroke="#89ceb9" stroke-width="4" stroke-linejoin="round" />
+            <path d="M20 20V33" stroke="#89ceb9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M28 20V33" stroke="#89ceb9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M4 10H44" stroke="#89ceb9" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M16 10L19.289 4H28.7771L32 10H16Z" fill="none" stroke="#89ceb9" stroke-width="4"
+                stroke-linejoin="round" />
+        </svg>
+        <div onclick="clickDelete()"> 清空搜索结果</div>
+    </div>
+
+    <div id="content"></div>
+
+    <!-- <footer>
+        <span>Github</span>
+    </footer> -->
+
+    <div class="toTop">
+        <svg width="28" height="28" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24.0083 14.1006V42.0001" stroke="#fff" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M12 26L24 14L36 26" stroke="#fff" stroke-width="4" stroke-linecap="round"
+                stroke-linejoin="round" />
+            <path d="M12 6H36" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+    </div>
+</body>
+
+<script src="main.js"></script>
+
+</html>
